@@ -113,10 +113,10 @@ def generate_struct_to_graph(time_serie:np.array, date:np.array, labels:list, wi
 		conteo_rep = {}
 		for i in range(len(aux)):
 			date_aux = date[aux[i]: aux[i] + labels[i][1]]
-			name_column = f"Motif_{time_serie_estimated[aux[i]][0]}"
+			name_column = f"Motif ({time_serie_estimated[aux[i]][0]}, {labels[i][1]})"
 			if name_column in conteo_rep.keys():
 				conteo_rep[name_column] += 1
-				name_column+=f"_{conteo_rep[name_column]}"
+				name_column+=f" " * conteo_rep[name_column]
 			else:
 				conteo_rep[name_column] = 1
 			df_aux = pd.DataFrame({"Date":date_aux, name_column:time_serie_estimated[aux[i]][1]})
