@@ -3,3 +3,4 @@ numpy==1.24.2
 pandas==1.5.3
 plotly==5.13.1
 PyQt5==5.15.9
+PyQtWebEngine==5.15.6
