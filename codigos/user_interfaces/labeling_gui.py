@@ -295,7 +295,7 @@ class LabelingDlg(QMainWindow):
 		
 			hyper_genetic_alg_form_layout = QFormLayout()
 			hyper_genetic_alg_form_layout.addRow(QLabel(properties["SELECTED_HYPERPARAMETERS"]))
-			hyper_genetic_alg_form_layout.addRow(QLabel(properties["SELECTED_ALG"]), self.population_size_line_edit)
+			hyper_genetic_alg_form_layout.addRow(QLabel(properties["POPULATION_SIZE"]), self.population_size_line_edit)
 			hyper_genetic_alg_form_layout.addRow(QLabel(properties["NUM_EPOCS"]), self.num_epocs_line_edit)
 			hyper_genetic_alg_form_layout.addRow(QLabel(properties["SELECT_CROOSOVER_OP"]), self.crossover_operator_selector)
 			hyper_genetic_alg_form_layout.addRow(QLabel(properties["SELECT_MUTATE_OP"]), self.mutate_operator_selector)
